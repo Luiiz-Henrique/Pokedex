@@ -1,6 +1,10 @@
 # Pokédex DIO - Projeto de Curso
 
-![Pokémon Banner](link_para_imagem_banner.jpg)
+<p align="center" >
+  <img src="Title_Pokemon.png" alt="Pokémon Banner" width="350px"/>
+</p>
+
+
 
 Bem-vindo à Pokédex desenvolvida como parte do curso da Digital Innovation One! Este projeto tem como objetivo explorar conceitos avançados de JavaScript e integração de APIs para criar uma interface interativa que exibe informações básicas sobre os Pokémon da 1ª geração.
 
@@ -16,15 +20,25 @@ A aplicação utiliza conceitos avançados de JavaScript para buscar e exibir os
 
 ## Capturas de Tela
 
-![Página Inicial](link_para_imagem_home.jpg)
-
-![Detalhes do Pokémon](link_para_imagem_detalhes.jpg)
+<p align="center" >
+  <img src="Pokedex.png" alt="Página Inicial"/>
+</p>
 
 ## Como Usar
 
-1. Clone ou faça o download do repositório.
-2. Abra o arquivo `index.html` em seu navegador.
-3. Explore a Pokédex, navegue pelos Pokémon e divirta-se conhecendo cada um deles!
+```bash
+  # Clone ou faça o download do repositório. 
+  $ git clone https://github.com/Luiiz-Henrique/Pokedex.git
+
+  # Navegar até a pasta
+  $ cd Pokedex
+
+  # Instalar dependências 
+  $ npm install
+
+  # Iniciar a aplicação
+  $ http-server.cmd
+```
 
 ## Objetivos do Projeto
 
