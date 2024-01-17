@@ -56,7 +56,7 @@ function openPopup (pokemon) {
                     <h4>Sobre</h4>
 
                     <p class="aboutInfos">
-                        It can freely recombine its own cellular structure to transform into other life-forms.
+                        ${descriptionPokemon(pokemon.number)}
                     </p>
 
                     <h4>Estatísticas</h4>
@@ -73,7 +73,7 @@ function openPopup (pokemon) {
                     <h4>Fragilidade</h4>
 
                     <ul class="weaknessInfos">
-                        ${listTypesWeakness(pokemon.type).then((result) => console.log(result))}
+                        <weakness-pokemon type="${pokemon.type}"></weakness-pokemon>
                     </ul>
                     <!-- Infos Here -->
                 </div>
@@ -103,15 +103,40 @@ pokemonList.addEventListener('click', (event) => {
     pokeApi.getPokemonNumber(numberPokemon).then((response) => openPopup(response))
 })
 
-function listTypesWeakness(type){
-    return pokeApi.getWeaknessPokemon(type)
+
+class WeaknessPokemon extends HTMLElement {
+    constructor () {
+        super()
+
+        //const shadow = this.attachShadow({mode: "open"})
+        const weaknessInfos = document.querySelector(".weaknessInfos")
+
+        pokeApi.getWeaknessPokemon(this.getAttribute('type'))
+            .then((response) => {
+                response.double_damage_from.map((typeWeakness) => {
+                    const weakness = document.createElement('li')
+                    weakness.className = `type ${typeWeakness.name}`
+                    weakness.textContent = typeWeakness.name
+
+                    weaknessInfos.appendChild(weakness)
+                })
+            })
+    }
+}
+customElements.define('weakness-pokemon', WeaknessPokemon)
+
+
+function descriptionPokemon(numberPokemon) {
+    return pokeApi.getDescriptionPokemon(numberPokemon)
         .then((response) => {
-            response.double_damage_from.map((typeWeakness) => `
-            <li>${typeWeakness.name}</li>`
-            ).join('')
+            const aboutInfos = document.querySelector(".aboutInfos")
+            aboutInfos.textContent = response[9].flavor_text
         })
 }
+
 
 function closePopup9() { 
     popupCharacteristics.style.display = 'none'
 }
+
+

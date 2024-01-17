@@ -115,58 +115,58 @@ body{
     height: 70px;
 }
 
-.normal:hover{
+.pokemons .pokemon.normal:hover{
     box-shadow: 0 0 0.8em #a6a877;
 } 
-.grass:hover{
+.pokemons .pokemon.grass:hover{
     box-shadow: 0 0 0.8em #77c850;
 } 
-.fire:hover{
+.pokemons .pokemon.fire:hover{
     box-shadow: 0 0 0.8em #ee7f30;
 } 
-.water:hover{
+.pokemons .pokemon.water:hover{
     box-shadow: 0 0 0.8em #678fee;
 } 
-.electric:hover{
+.pokemons .pokemon.electric:hover{
     box-shadow: 0 0 0.8em #f7cf2e;
 } 
-.ice:hover{
+.pokemons .pokemon.ice:hover{
     box-shadow: 0 0 0.8em #98d5d7;
 } 
-.ground:hover{
+.pokemons .pokemon.ground:hover{
     box-shadow: 0 0 0.8em #dfbf89;
 } 
-.flying:hover{
+.pokemons .pokemon.flying:hover{
     box-shadow: 0 0 0.8em #a98ff0;
 } 
-.poison:hover{
+.pokemons .pokemon.poison:hover{
     box-shadow: 0 0 0.8em #a040a0;
 } 
-.fighting:hover{
+.pokemons .pokemon.fighting:hover{
     box-shadow: 0 0 0.8em #bf3029;
 } 
-.psychic:hover{
+.pokemons .pokemon.psychic:hover{
     box-shadow: 0 0 0.8em #f65687;
 } 
-.dark:hover{
+.pokemons .pokemon.dark:hover{
     box-shadow: 0 0 0.8em #725847;
 } 
-.rock:hover{
+.pokemons .pokemon.rock:hover{
     box-shadow: 0 0 0.8em #b8a137;
 } 
-.bug:hover{
+.pokemons .pokemon.bug:hover{
     box-shadow: 0 0 0.8em #a8b720;
 } 
-.ghost:hover{
+.pokemons .pokemon.ghost:hover{
     box-shadow: 0 0 0.8em #6e5896;
 } 
-.steel:hover{
+.pokemons .pokemon.steel:hover{
     box-shadow: 0 0 0.8em #b9b7cf;
 } 
-.dragon:hover{
+.pokemons .pokemon.dragon:hover{
     box-shadow: 0 0 0.8em #6f38f6;
 } 
-.fairy:hover{
+.pokemons .pokemon.fairy:hover{
     box-shadow: 0 0 0.8em #f9aec7;
 } 
 
@@ -286,7 +286,7 @@ body{
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: .4rem;
-    background-color: #c1c1c1;
+    color: white
 }
 
 @media screen and (min-width: 380px) {

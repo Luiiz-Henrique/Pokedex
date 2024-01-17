@@ -58,3 +58,9 @@ pokeApi.getWeaknessPokemon = (typeName) => {
         .then((response) => response.json())
         .then((jsonBody) => jsonBody.damage_relations)
 }
+
+pokeApi.getDescriptionPokemon = (numberPokemon) => {
+    return fetch(`https://pokeapi.co/api/v2/pokemon-species/${numberPokemon}/`)
+        .then((response) => response.json())
+        .then((description) => description.flavor_text_entries)
+}
