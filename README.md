@@ -37,7 +37,7 @@ A aplicação utiliza conceitos avançados de JavaScript para buscar e exibir os
 
 <p align="center" >
   <img src="Pokedex.png" alt="Página Inicial"/>
-  <img src="Pokedex.png" alt="Página Inicial"/>
+  <img src="Popup_of_characteristics.png" alt="popup das informações do pokemon"/>
 </p>
 
 ## Como Usar
